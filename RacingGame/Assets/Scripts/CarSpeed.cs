@@ -13,7 +13,7 @@ public class CarSpeed : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-        speed = (int)(car.velocity.magnitude * 3.6);
+        speed = (int)(car.velocity.magnitude * 2.7);
         speedDisplay.text = speed.ToString();
 	}
 }
