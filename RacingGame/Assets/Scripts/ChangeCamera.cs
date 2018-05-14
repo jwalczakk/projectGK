@@ -62,6 +62,7 @@ public class ChangeCamera : MonoBehaviour
                 defaultBackCamera.SetActive(false);
             }
 
+            CameraStable.SetStabilizationState(true);
             firstPersonCamera.SetActive(false);
             firstPersonBackCamera.SetActive(false);
         }
@@ -78,6 +79,7 @@ public class ChangeCamera : MonoBehaviour
                 farBackCamera.SetActive(false);
             }
 
+            CameraStable.SetStabilizationState(true);
             defaultCamera.SetActive(false);
             defaultBackCamera.SetActive(false);
         }
@@ -94,6 +96,7 @@ public class ChangeCamera : MonoBehaviour
                 firstPersonBackCamera.SetActive(false);
             }
 
+            CameraStable.SetStabilizationState(false);
             farCamera.SetActive(false);
             farBackCamera.SetActive(false);
         }
