@@ -19,8 +19,24 @@ public class LapComplete : MonoBehaviour
 
     public GameObject LapTimeBox;
 
+    public GameObject LapCounter;
+    public int LapsDone;
+
+    public GameObject RaceFinish;
+    private int LapsRequirement = 1;
+
+    void Update()
+    {
+        if(LapsDone == LapsRequirement)
+        {
+            RaceFinish.SetActive(true);
+        }   
+    }
+
     void OnTriggerEnter()
     {
+
+        LapsDone += 1;
 
         if (LapTimeManager.MinuteCount < BestMinuteCount
             || (LapTimeManager.MinuteCount == BestMinuteCount
@@ -58,6 +74,9 @@ public class LapComplete : MonoBehaviour
         LapTimeManager.MinuteCount = 0;
         LapTimeManager.SecondCount = 0;
         LapTimeManager.MilisecondCount = 0;
+
+        LapCounter.GetComponent<Text>().text = "" + LapsDone;
+
 
         HalfLapTrig.SetActive(true);
         LapCompleteTrig.SetActive(false);
