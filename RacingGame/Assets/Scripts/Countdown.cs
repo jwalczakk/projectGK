@@ -9,6 +9,9 @@ public class Countdown : MonoBehaviour {
     public GameObject LapTimer;
     public GameObject CarControls;
 
+    public AudioSource GetReady;
+    public AudioSource GoAudio;
+
 	void Start ()
     {
         StartCoroutine(CountStart());
@@ -19,21 +22,25 @@ public class Countdown : MonoBehaviour {
     {
         yield return new WaitForSeconds(2);
         CountDown.GetComponent<Text>().text = "3";
+        GetReady.Play();
         CountDown.SetActive(true);
 
         yield return new WaitForSeconds(1);
         CountDown.SetActive(false);
         CountDown.GetComponent<Text>().text = "2";
+        GetReady.Play();
         CountDown.SetActive(true);
 
         yield return new WaitForSeconds(1);
         CountDown.SetActive(false);
         CountDown.GetComponent<Text>().text = "1";
+        GetReady.Play();
         CountDown.SetActive(true);
 
         yield return new WaitForSeconds(1);
         CountDown.SetActive(false);
         CountDown.GetComponent<Text>().text = "GO!";
+        GoAudio.Play();
         CountDown.SetActive(true);
 
         LapTimer.SetActive(true);
