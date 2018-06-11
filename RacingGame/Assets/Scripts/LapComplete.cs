@@ -13,24 +13,24 @@ public class LapComplete : MonoBehaviour
     public GameObject BestSecondDisplay;
     public GameObject BestMillisecondDisplay;
 
+    public GameObject LapTimeBox;
+    public GameObject LapCounter;
+    public int LapsDone;
+    public int LapsRequirement = 2;
+
+    public GameObject RaceFinish;
+
     private int BestMinuteCount = int.MaxValue;
     private int BestSecondCount = int.MaxValue;
     private float BestMillisecondCount = int.MaxValue;
 
-    public GameObject LapTimeBox;
-
-    public GameObject LapCounter;
-    public int LapsDone;
-
-    public GameObject RaceFinish;
-    private int LapsRequirement = 1;
 
     void Update()
     {
-        if(LapsDone == LapsRequirement)
+        if (LapsDone == LapsRequirement)
         {
             RaceFinish.SetActive(true);
-        }   
+        }
     }
 
     void OnTriggerEnter()

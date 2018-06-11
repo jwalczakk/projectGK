@@ -8,7 +8,6 @@ public class RaceFinish : MonoBehaviour {
     public GameObject MyCar;
     public GameObject FinishCam;
     public GameObject ViewModes;
-    public GameObject FinishMusic;
     public GameObject CompleteTrig;
     public AudioSource FinishMusicSource;
 
@@ -22,7 +21,6 @@ public class RaceFinish : MonoBehaviour {
         MyCar.GetComponent<CarUserControl>().enabled = false;
         MyCar.SetActive(true);
         FinishCam.SetActive(true);
-        FinishMusic.SetActive(false);
         ViewModes.SetActive(false);
         FinishMusicSource.Play();
     }

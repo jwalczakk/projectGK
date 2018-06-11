@@ -6,6 +6,6 @@ public class FinishCamRotate : MonoBehaviour {
 
 	void Update ()
     {
-        transform.Rotate(0, 1, 0, Space.World);
+        transform.Rotate(0, 0.5f, 0, Space.World);
 	}
 }
