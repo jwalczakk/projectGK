@@ -180,7 +180,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Play Game
+  m_Text: 'Random
+
+'
 --- !u!222 &109748500
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -199,7 +201,7 @@ GameObject:
   - component: {fileID: 335740010}
   - component: {fileID: 335740009}
   m_Layer: 5
-  m_Name: PlayGame
+  m_Name: RandomGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -217,11 +219,11 @@ RectTransform:
   m_Children:
   - {fileID: 109748498}
   m_Father: {fileID: 402186771}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 231, y: 8}
+  m_AnchoredPosition: {x: 231, y: -27}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &335740009
@@ -264,7 +266,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 641553387}
-        m_MethodName: PlayGame
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -394,8 +396,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 335740008}
   - {fileID: 1842594721}
+  - {fileID: 335740008}
   - {fileID: 1331166267}
   - {fileID: 2054513176}
   m_Father: {fileID: 0}
@@ -908,9 +910,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Track Select
-
-'
+  m_Text: Play Game
 --- !u!222 &1772349170
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -929,7 +929,7 @@ GameObject:
   - component: {fileID: 1842594723}
   - component: {fileID: 1842594722}
   m_Layer: 5
-  m_Name: TrackSelect
+  m_Name: PlayGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -947,11 +947,11 @@ RectTransform:
   m_Children:
   - {fileID: 1772349168}
   m_Father: {fileID: 402186771}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 231, y: -30}
+  m_AnchoredPosition: {x: 231, y: 13}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1842594722
@@ -994,7 +994,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 641553387}
-        m_MethodName: TrackSelect
+        m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
