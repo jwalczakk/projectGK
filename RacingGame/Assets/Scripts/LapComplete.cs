@@ -7,7 +7,7 @@ public class LapComplete : MonoBehaviour
 {
 
     public GameObject LapCompleteTrig;
-    public GameObject HalfLapTrig;
+    public GameObject NextTrigger;
 
     public GameObject BestMinuteDisplay;
     public GameObject BestSecondDisplay;
@@ -78,7 +78,7 @@ public class LapComplete : MonoBehaviour
         LapCounter.GetComponent<Text>().text = "" + LapsDone;
 
 
-        HalfLapTrig.SetActive(true);
+        NextTrigger.SetActive(true);
         LapCompleteTrig.SetActive(false);
     }
 
