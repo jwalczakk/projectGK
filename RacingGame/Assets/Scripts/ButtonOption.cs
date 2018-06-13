@@ -27,4 +27,8 @@ public class ButtonOption : MonoBehaviour {
     {
         SceneManager.LoadScene(3);
     }
+    public void Track03()
+    {
+        SceneManager.LoadScene(4);
+    }
 }
