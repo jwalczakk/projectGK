@@ -12,9 +12,12 @@ EditorBuildSettings:
     path: Assets/TrackSelect.unity
     guid: 73417bea080893a42a8e517723b99523
   - enabled: 1
-    path: Assets/RaceArea01.unity
-    guid: 59dafe588b058074d836ae539ad41c3b
+    path: Assets/VolcanoArea.unity
+    guid: 12aece4f77c8c6046bd09c57b451beb1
   - enabled: 1
-    path: Assets/RaceArea02.unity
+    path: Assets/ForrestArea.unity
     guid: 2857bf470d4b261418ac57df1add81ce
+  - enabled: 1
+    path: Assets/SnowArea.unity
+    guid: 4b9fd54c30c9cab4fa46d2729c4732d0
   m_configObjects: {}
