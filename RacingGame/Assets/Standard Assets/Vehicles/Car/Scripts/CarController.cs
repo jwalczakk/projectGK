@@ -29,7 +29,7 @@ namespace UnityStandardAssets.Vehicles.Car
         [SerializeField] private float m_FullTorqueOverAllWheels;
         [SerializeField] private float m_ReverseTorque;
         [SerializeField] private float m_MaxHandbrakeTorque;
-        [SerializeField] private float m_Downforce = 200f;
+        [SerializeField] private float m_Downforce = 100f;
         [SerializeField] private SpeedType m_SpeedType;
         [SerializeField] public static float m_Topspeed = 250;
         [SerializeField] private static int NoOfGears = 5;
