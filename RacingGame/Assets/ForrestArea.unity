@@ -2309,7 +2309,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
       propertyPath: m_FullTorqueOverAllWheels
-      value: 8000
+      value: 9000
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
       propertyPath: m_ReverseTorque
@@ -2401,7 +2401,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 5400000, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
       propertyPath: m_Mass
-      value: 1800
+      value: 1400
       objectReference: {fileID: 0}
     - target: {fileID: 5400000, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
       propertyPath: m_IsKinematic
@@ -2433,7 +2433,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
       propertyPath: m_MaxHandbrakeTorque
-      value: 8000
+      value: 9000
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
       propertyPath: m_Enabled
@@ -2966,11 +2966,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2
-  m_Text: '/ 2
-
-
-
-'
+  m_Text: / 2
 --- !u!222 &915949392
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4167,8 +4163,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1485805821}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 72.8, y: 7.5, z: 300}
-  m_LocalScale: {x: 52, y: 15, z: 1}
+  m_LocalPosition: {x: 72.8, y: 7.5, z: 299.65002}
+  m_LocalScale: {x: 64, y: 15, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -5631,8 +5627,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2042798119}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 72.8, y: 7.5, z: 298.5}
-  m_LocalScale: {x: 52, y: 15, z: 1}
+  m_LocalPosition: {x: 72.8, y: 7.5, z: 296.64}
+  m_LocalScale: {x: 64, y: 15, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7

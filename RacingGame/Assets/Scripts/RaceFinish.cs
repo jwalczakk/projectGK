@@ -22,8 +22,8 @@ public class RaceFinish : MonoBehaviour {
         MyCar.GetComponent<CarController>().enabled = false;
         MyCar.GetComponent<CarUserControl>().enabled = false;
         MyCar.GetComponent<AudioSource>().enabled = false;
-        FinishCam.SetActive(true);
         MyCar.SetActive(true);
+        FinishCam.SetActive(true);
         ViewModes.SetActive(false);
         FinishMusicSource.Play();
     }
