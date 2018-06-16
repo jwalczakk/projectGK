@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.4736594, g: 0.5332036, b: 0.57959515, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1120,7 +1120,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: ef8c4b2848de5644f93b89e39f363bc3, type: 2}
   m_StaticBatchInfo:
@@ -2504,6 +2503,18 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6ec41f7c0e0d3fb40933551a4124b211, type: 2}
+    - target: {fileID: 100016, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
   m_IsPrefabParent: 0
@@ -4852,7 +4863,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 18abc2ebe1a2bd04bbf2f618a9f59325, type: 2}
   m_StaticBatchInfo:
@@ -5206,6 +5216,8 @@ MonoBehaviour:
   CountDown: {fileID: 2026609588}
   LapTimer: {fileID: 1787200358}
   CarControls: {fileID: 756431135}
+  LapRequirementBox: {fileID: 915949389}
+  LapCompleteTrigger: {fileID: 1485805821}
   GetReady: {fileID: 2091259358}
   GoAudio: {fileID: 1635795811}
 --- !u!4 &1916800192
@@ -5593,6 +5605,7 @@ MonoBehaviour:
   ViewModes: {fileID: 174218949}
   CompleteTrig: {fileID: 1485805821}
   Timer: {fileID: 1787200358}
+  CarAudio: {fileID: 0}
   FinishMusicSource: {fileID: 1867704692}
 --- !u!1 &2080962276
 GameObject:

@@ -24,6 +24,10 @@ public class LapComplete : MonoBehaviour
     private int BestSecondCount = int.MaxValue;
     private float BestMillisecondCount = int.MaxValue;
 
+    private void Awake()
+    {
+    }
+
     void OnTriggerEnter()
     {
 

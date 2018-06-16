@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,6 +8,9 @@ public class Countdown : MonoBehaviour {
     public GameObject CountDown;
     public GameObject LapTimer;
     public GameObject CarControls;
+    public GameObject LapRequirementBox;
+
+    public GameObject LapCompleteTrigger;
 
     public AudioSource GetReady;
     public AudioSource GoAudio;
@@ -15,8 +18,8 @@ public class Countdown : MonoBehaviour {
 	void Start ()
     {
         StartCoroutine(CountStart());
-
-	}
+        LapRequirementBox.GetComponent<Text>().text = string.Format("/ {0}", LapCompleteTrigger.GetComponent<LapComplete>().LapsRequirement);
+    }
 
     IEnumerator CountStart()
     {
