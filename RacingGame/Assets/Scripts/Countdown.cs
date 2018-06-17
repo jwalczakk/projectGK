@@ -9,7 +9,7 @@ public class Countdown : MonoBehaviour
     public GameObject CountDown;
     public GameObject LapTimer;
     public GameObject[] CarControls;
-    public GameObject LapRequirementBox;
+    public GameObject[] LapRequirementBoxes;
 
     public GameObject LapCompleteTrigger;
 
@@ -19,7 +19,8 @@ public class Countdown : MonoBehaviour
     void Start()
     {
         StartCoroutine(CountStart());
-        LapRequirementBox.GetComponent<Text>().text = string.Format("/ {0}", LapCompleteTrigger.GetComponent<LapComplete>().LapsRequirement);
+        foreach (GameObject box in LapRequirementBoxes)
+            box.GetComponent<Text>().text = string.Format("/ {0}", LapCompleteTrigger.GetComponent<LapComplete>().LapsRequirement);
     }
 
     IEnumerator CountStart()

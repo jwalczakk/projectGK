@@ -1943,7 +1943,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fccf57d581a89e24d865ee4c002a9885, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextTrigger: {fileID: 1485805821}
   CurrentTrigger: {fileID: 553457777}
   Controller: {fileID: 1078257687}
 --- !u!23 &553457779
@@ -7741,7 +7740,9 @@ MonoBehaviour:
   CarControls:
   - {fileID: 756431135}
   - {fileID: 1568290931}
-  LapRequirementBox: {fileID: 915949389}
+  LapRequirementBoxes:
+  - {fileID: 915949389}
+  - {fileID: 1363355324}
   LapCompleteTrigger: {fileID: 1485805821}
   GetReady: {fileID: 2091259358}
   GoAudio: {fileID: 1635795811}

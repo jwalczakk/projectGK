@@ -7,7 +7,6 @@ public class LapComplete : MonoBehaviour
 {
 
     public GameObject LapCompleteTrig;
-    public GameObject NextTrigger;
 
     // Player One
     public GameObject BestMinuteDisplay1;
@@ -59,9 +58,6 @@ public class LapComplete : MonoBehaviour
         {
             return;
         }
-        
-        //NextTrigger.SetActive(true);
-        //LapCompleteTrig.SetActive(false);
     }
 
     private void OnPlayerOneTriggerEnter()

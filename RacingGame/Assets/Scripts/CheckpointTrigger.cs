@@ -5,8 +5,6 @@ using UnityStandardAssets.Vehicles.Car;
 
 public class CheckpointTrigger : MonoBehaviour
 {
-
-    public GameObject NextTrigger;
     public GameObject CurrentTrigger;
     public CheckpointsController Controller;
 
@@ -18,9 +16,5 @@ public class CheckpointTrigger : MonoBehaviour
         else if (other.attachedRigidbody.tag == "PlayerTwo") {
             Controller.OnPlayerTwoTriggeredCheckpoint(CurrentTrigger);
         }
-        //{
-        //    NextTrigger.SetActive(true);
-        //    CurrentTrigger.SetActive(false);
-        //}
     }
 }
