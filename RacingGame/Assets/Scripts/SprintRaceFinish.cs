@@ -1,15 +1,29 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Vehicles.Car;
 
+/// <summary>
+/// Klasa odpowiadajaca za wyzwolenie wydarzenia konca wyscigu od punktu do punktu
+/// </summary>
 public class SprintRaceFinish : MonoBehaviour
 {
-
+    /// <summary>
+    /// Samochod
+    /// </summary>
     public GameObject MyCar;
+    /// <summary>
+    /// Kamera koncowa
+    /// </summary>
     public GameObject FinishCam;
     public GameObject ViewModes;
+    /// <summary>
+    /// Menedzer pomiaru czasu
+    /// </summary>
     public GameObject Timer;
+    /// <summary>
+    /// Dzwiek ukonczenia wyscigu
+    /// </summary>
     public AudioSource FinishMusicSource;
 
     void OnTriggerEnter()

@@ -2,28 +2,57 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Typ wyliczeniowy zawierajacy dostepne tryby kamery
+/// </summary>
 public enum CameraMode
 {
     DefaultCamera, FarCamera, FirstPersonCamera
 }
 
+/// <summary>
+/// Klasa odpowiadajaca za przelaczanie trybow kamery samochodu
+/// </summary>
 public class ChangeCamera : MonoBehaviour
 {
-
+    /// <summary>
+    /// Domyslna kamera (blisko pojazdu)
+    /// </summary>
     public GameObject defaultCamera;
 
+    /// <summary>
+    /// Kamera poscigowa (daleko pojazdu)
+    /// </summary>
     public GameObject farCamera;
 
+    /// <summary>
+    /// Kamera pierwszej osoby
+    /// </summary>
     public GameObject firstPersonCamera;
 
+    /// <summary>
+    /// Wsteczna domyslna kamera (blisko pojazdu)
+    /// </summary>
     public GameObject defaultBackCamera;
 
+    /// <summary>
+    /// Wsteczna kamera poscigowa (daleko pojazdu)
+    /// </summary>
     public GameObject farBackCamera;
 
+    /// <summary>
+    /// Wsteczna kamera pierwszej osoby
+    /// </summary>
     public GameObject firstPersonBackCamera;
 
+    /// <summary>
+    /// Wybrany tryb kamery
+    /// </summary>
     public CameraMode cameraMode;
 
+    /// <summary>
+    /// Stan wyboru wstecznej kamery
+    /// </summary>
     private bool isBackCameraEnabled = false;
 
     // Update is called once per frame
@@ -45,6 +74,10 @@ public class ChangeCamera : MonoBehaviour
         StartCoroutine(ChangeMode());
     }
 
+    /// <summary>
+    /// Zmiana trybu kamery
+    /// </summary>
+    /// <returns></returns>
     IEnumerator ChangeMode()
     {
         yield return new WaitForSeconds(0.01f);

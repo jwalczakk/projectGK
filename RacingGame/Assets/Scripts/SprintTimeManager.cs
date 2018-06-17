@@ -1,18 +1,41 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Klasa odpowiadajaca za pomiar czasu w wyscigach od punktu A do B
+/// </summary>
 public class SprintTimeManager : MonoBehaviour {
+    /// <summary>
+    /// Licznik minut
+    /// </summary>
+    public static int MinuteCount;
+    /// <summary>
+    /// Licznik sekund
+    /// </summary>
+    public static int SecondCount;
+    /// <summary>
+    /// Licznik milisekund
+    /// </summary>
+    public static float MilisecondCount;
+    /// <summary>
+    /// Tekst do wyswietlenia milisekund
+    /// </summary>
+    public static string MilisecondDisplay;
 
-	public static int MinuteCount;
-	public static int SecondCount;
-	public static float MilisecondCount;
-	public static string MilisecondDisplay;
-
-	public GameObject MinuteBox;
-	public GameObject SecondBox;
-	public GameObject MilisecondBox;
+    /// <summary>
+    /// Pole wyswietlajace minuty
+    /// </summary>
+    public GameObject MinuteBox;
+    /// <summary>
+    /// Pole wyswietlajace sekundy
+    /// </summary>
+    public GameObject SecondBox;
+    /// <summary>
+    /// Pole wyswietlajace milisekundy
+    /// </summary>
+    public GameObject MilisecondBox;
 
 	void Update () {
 		MilisecondCount += Time.deltaTime * 10;		

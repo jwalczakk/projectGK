@@ -1,7 +1,10 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Klasa odpowiadajaca za obrot kamery po ukonczeniu wyscigu
+/// </summary>
 public class FinishCamRotate : MonoBehaviour {
 
 	void Update ()

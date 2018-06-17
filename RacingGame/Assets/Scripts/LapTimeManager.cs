@@ -3,53 +3,108 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LapTimeManager : MonoBehaviour {
+/// <summary>
+/// Klasa odpowiadajaca za pomiar czasu okrazen
+/// </summary>
+public class LapTimeManager : MonoBehaviour
+{
 
+    /// <summary>
+    /// Licznik minut gracza nr 1
+    /// </summary>
 	public static int MinuteCount1;
-	public static int SecondCount1;
-	public static float MilisecondCount1;
-	public static string MilisecondDisplay1;
+    /// <summary>
+    /// Licznik sekund gracza nr 1
+    /// </summary>
+    public static int SecondCount1;
+    /// <summary>
+    /// Licznik milisekund gracza nr 1
+    /// </summary>
+    public static float MilisecondCount1;
+    /// <summary>
+    /// Tekst do wyswietlenia milisekund gracza nr 1
+    /// </summary>
+    public static string MilisecondDisplay1;
 
-	public GameObject MinuteBox1;
-	public GameObject SecondBox1;
-	public GameObject MilisecondBox1;
+    /// <summary>
+    /// Pole wyswietlajace minuty gracza nr 1
+    /// </summary>
+    public GameObject MinuteBox1;
+    /// <summary>
+    /// Pole wyswietlajace sekundy gracza nr 1
+    /// </summary>
+    public GameObject SecondBox1;
+    /// <summary>
+    /// Pole wyswietlajace milisekundy gracza nr 1
+    /// </summary>
+    public GameObject MilisecondBox1;
 
+    /// <summary>
+    /// Licznik minut gracza nr 2
+    /// </summary>
     public static int MinuteCount2;
+    /// <summary>
+    /// Licznik sekund gracza nr 2
+    /// </summary>
     public static int SecondCount2;
+    /// <summary>
+    /// Licznik milisekund gracza nr 2
+    /// </summary>
     public static float MilisecondCount2;
+    /// <summary>
+    /// Tekst do wyswietlenia milisekund gracza nr 2
+    /// </summary>
     public static string MilisecondDisplay2;
 
+    /// <summary>
+    /// Pole wyswietlajace minuty gracza nr 2
+    /// </summary>
     public GameObject MinuteBox2;
+    /// <summary>
+    /// Pole wyswietlajace sekundy gracza nr 2
+    /// </summary>
     public GameObject SecondBox2;
+    /// <summary>
+    /// Pole wyswietlajace milisekundy gracza nr 2
+    /// </summary>
     public GameObject MilisecondBox2;
 
-    void Update () {
+    void Update()
+    {
         //Player One
-		MilisecondCount1 += Time.deltaTime * 10;		
-		MilisecondDisplay1 = MilisecondCount1.ToString ("F0");
-		MilisecondBox1.GetComponent<Text> ().text = "" + MilisecondDisplay1;
+        MilisecondCount1 += Time.deltaTime * 10;
+        MilisecondDisplay1 = MilisecondCount1.ToString("F0");
+        MilisecondBox1.GetComponent<Text>().text = "" + MilisecondDisplay1;
 
-		if (MilisecondCount1 >= 10) {
-			MilisecondCount1 = 0;
-			SecondCount1++;
-		}	
+        if (MilisecondCount1 >= 10)
+        {
+            MilisecondCount1 = 0;
+            SecondCount1++;
+        }
 
-		if (SecondCount1 <= 9) {
-			SecondBox1.GetComponent<Text> ().text = "0" + SecondCount1 + ".";
-		} else {
-			SecondBox1.GetComponent<Text> ().text = "" + SecondCount1 + ".";
-		}
+        if (SecondCount1 <= 9)
+        {
+            SecondBox1.GetComponent<Text>().text = "0" + SecondCount1 + ".";
+        }
+        else
+        {
+            SecondBox1.GetComponent<Text>().text = "" + SecondCount1 + ".";
+        }
 
-		if (SecondCount1 >= 60) {
-			SecondCount1 = 0;
-			MinuteCount1++;		
-		}
+        if (SecondCount1 >= 60)
+        {
+            SecondCount1 = 0;
+            MinuteCount1++;
+        }
 
-		if (MinuteCount1 <= 9) {
-			MinuteBox1.GetComponent<Text> ().text = "0" + MinuteCount1 + ":";
-		} else {
-			MinuteBox1.GetComponent<Text> ().text = "" + MinuteCount1 + ":";
-		}
+        if (MinuteCount1 <= 9)
+        {
+            MinuteBox1.GetComponent<Text>().text = "0" + MinuteCount1 + ":";
+        }
+        else
+        {
+            MinuteBox1.GetComponent<Text>().text = "" + MinuteCount1 + ":";
+        }
 
         //Player Two
         MilisecondCount2 += Time.deltaTime * 10;

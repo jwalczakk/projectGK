@@ -1,0 +1,25 @@
+var annotated_dup =
+[
+    [ "UnityStandardAssets", "namespace_unity_standard_assets.html", "namespace_unity_standard_assets" ],
+    [ "ButtonOption", "class_button_option.html", "class_button_option" ],
+    [ "CameraStable", "class_camera_stable.html", "class_camera_stable" ],
+    [ "CarChoice", "class_car_choice.html", "class_car_choice" ],
+    [ "CarHeadlights", "class_car_headlights.html", "class_car_headlights" ],
+    [ "CarSpeed", "class_car_speed.html", "class_car_speed" ],
+    [ "ChangeCamera", "class_change_camera.html", "class_change_camera" ],
+    [ "CheckpointsController", "class_checkpoints_controller.html", "class_checkpoints_controller" ],
+    [ "CheckpointTrigger", "class_checkpoint_trigger.html", "class_checkpoint_trigger" ],
+    [ "Countdown", "class_countdown.html", "class_countdown" ],
+    [ "DoxygenConfig", "class_doxygen_config.html", "class_doxygen_config" ],
+    [ "DoxygenWindow", "class_doxygen_window.html", "class_doxygen_window" ],
+    [ "DoxyRunner", "class_doxy_runner.html", "class_doxy_runner" ],
+    [ "DoxyThreadSafeOutput", "class_doxy_thread_safe_output.html", "class_doxy_thread_safe_output" ],
+    [ "FinishCamRotate", "class_finish_cam_rotate.html", null ],
+    [ "FinishRotate", "class_finish_rotate.html", null ],
+    [ "GlobalCar", "class_global_car.html", "class_global_car" ],
+    [ "LapComplete", "class_lap_complete.html", "class_lap_complete" ],
+    [ "LapTimeManager", "class_lap_time_manager.html", "class_lap_time_manager" ],
+    [ "RaceFinish", "class_race_finish.html", "class_race_finish" ],
+    [ "SprintRaceFinish", "class_sprint_race_finish.html", "class_sprint_race_finish" ],
+    [ "SprintTimeManager", "class_sprint_time_manager.html", "class_sprint_time_manager" ]
+];

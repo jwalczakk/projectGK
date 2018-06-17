@@ -3,17 +3,40 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Vehicles.Car;
 
+/// <summary>
+/// Klasa odpowiadajaca za wyzwolenie wydarzenia konca wyscigu na zamknietym torze
+/// </summary>
 public class RaceFinish : MonoBehaviour
 {
-
+    /// <summary>
+    /// Samochody uczestniczace w wyscigu
+    /// </summary>
     public GameObject[] Cars;
+    /// <summary>
+    /// Kamera koncowa
+    /// </summary>
     public GameObject FinishCam;
-    public GameObject ViewModes;
-    public GameObject CompleteTrig;
-    public GameObject Timer;
-    public GameObject CarAudio;
-    public AudioSource FinishMusicSource;
 
+    public GameObject ViewModes;
+    /// <summary>
+    /// Koncowy punkt kontrolny
+    /// </summary>
+    public GameObject CompleteTrig;
+    /// <summary>
+    /// Menedzer pomiaru czasu
+    /// </summary>
+    public GameObject Timer;
+    /// <summary>
+    /// Dzwiek samochodu
+    /// </summary>
+    public GameObject CarAudio;
+    /// <summary>
+    /// Dzwiek ukonczenia wyscigu
+    /// </summary>
+    public AudioSource FinishMusicSource;
+    /// <summary>
+    /// Kontroler punktow kontrolnych
+    /// </summary>
     public CheckpointsController Controller;
 
     void OnTriggerEnter(Collider other)
