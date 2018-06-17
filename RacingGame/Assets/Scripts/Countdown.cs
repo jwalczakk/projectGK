@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Countdown : MonoBehaviour {
+public class Countdown : MonoBehaviour
+{
 
     public GameObject CountDown;
     public GameObject LapTimer;
-    public GameObject CarControls;
+    public GameObject[] CarControls;
     public GameObject LapRequirementBox;
 
     public GameObject LapCompleteTrigger;
@@ -15,7 +16,7 @@ public class Countdown : MonoBehaviour {
     public AudioSource GetReady;
     public AudioSource GoAudio;
 
-	void Start ()
+    void Start()
     {
         StartCoroutine(CountStart());
         LapRequirementBox.GetComponent<Text>().text = string.Format("/ {0}", LapCompleteTrigger.GetComponent<LapComplete>().LapsRequirement);
@@ -47,7 +48,8 @@ public class Countdown : MonoBehaviour {
         CountDown.SetActive(true);
 
         LapTimer.SetActive(true);
-        CarControls.SetActive(true);
+        foreach (GameObject obj in CarControls)
+            obj.SetActive(true);
     }
 
 }

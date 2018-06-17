@@ -1,44 +1,89 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class LapTimeManager : MonoBehaviour {
 
-	public static int MinuteCount;
-	public static int SecondCount;
-	public static float MilisecondCount;
-	public static string MilisecondDisplay;
+	public static int MinuteCount1;
+	public static int SecondCount1;
+	public static float MilisecondCount1;
+	public static string MilisecondDisplay1;
 
-	public GameObject MinuteBox;
-	public GameObject SecondBox;
-	public GameObject MilisecondBox;
+	public GameObject MinuteBox1;
+	public GameObject SecondBox1;
+	public GameObject MilisecondBox1;
 
-	void Update () {
-		MilisecondCount += Time.deltaTime * 10;		
-		MilisecondDisplay = MilisecondCount.ToString ("F0");
-		MilisecondBox.GetComponent<Text> ().text = "" + MilisecondDisplay;
+    public static int MinuteCount2;
+    public static int SecondCount2;
+    public static float MilisecondCount2;
+    public static string MilisecondDisplay2;
 
-		if (MilisecondCount >= 10) {
-			MilisecondCount = 0;
-			SecondCount++;
+    public GameObject MinuteBox2;
+    public GameObject SecondBox2;
+    public GameObject MilisecondBox2;
+
+    void Update () {
+        //Player One
+		MilisecondCount1 += Time.deltaTime * 10;		
+		MilisecondDisplay1 = MilisecondCount1.ToString ("F0");
+		MilisecondBox1.GetComponent<Text> ().text = "" + MilisecondDisplay1;
+
+		if (MilisecondCount1 >= 10) {
+			MilisecondCount1 = 0;
+			SecondCount1++;
 		}	
 
-		if (SecondCount <= 9) {
-			SecondBox.GetComponent<Text> ().text = "0" + SecondCount + ".";
+		if (SecondCount1 <= 9) {
+			SecondBox1.GetComponent<Text> ().text = "0" + SecondCount1 + ".";
 		} else {
-			SecondBox.GetComponent<Text> ().text = "" + SecondCount + ".";
+			SecondBox1.GetComponent<Text> ().text = "" + SecondCount1 + ".";
 		}
 
-		if (SecondCount >= 60) {
-			SecondCount = 0;
-			MinuteCount++;		
+		if (SecondCount1 >= 60) {
+			SecondCount1 = 0;
+			MinuteCount1++;		
 		}
 
-		if (MinuteCount <= 9) {
-			MinuteBox.GetComponent<Text> ().text = "0" + MinuteCount + ":";
+		if (MinuteCount1 <= 9) {
+			MinuteBox1.GetComponent<Text> ().text = "0" + MinuteCount1 + ":";
 		} else {
-			MinuteBox.GetComponent<Text> ().text = "" + MinuteCount + ":";
+			MinuteBox1.GetComponent<Text> ().text = "" + MinuteCount1 + ":";
 		}
-	}
+
+        //Player Two
+        MilisecondCount2 += Time.deltaTime * 10;
+        MilisecondDisplay2 = MilisecondCount2.ToString("F0");
+        MilisecondBox2.GetComponent<Text>().text = "" + MilisecondDisplay2;
+
+        if (MilisecondCount2 >= 10)
+        {
+            MilisecondCount2 = 0;
+            SecondCount2++;
+        }
+
+        if (SecondCount2 <= 9)
+        {
+            SecondBox2.GetComponent<Text>().text = "0" + SecondCount2 + ".";
+        }
+        else
+        {
+            SecondBox2.GetComponent<Text>().text = "" + SecondCount2 + ".";
+        }
+
+        if (SecondCount2 >= 60)
+        {
+            SecondCount2 = 0;
+            MinuteCount2++;
+        }
+
+        if (MinuteCount2 <= 9)
+        {
+            MinuteBox2.GetComponent<Text>().text = "0" + MinuteCount2 + ":";
+        }
+        else
+        {
+            MinuteBox2.GetComponent<Text>().text = "" + MinuteCount2 + ":";
+        }
+    }
 }

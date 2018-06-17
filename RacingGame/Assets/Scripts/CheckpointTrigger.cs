@@ -8,13 +8,19 @@ public class CheckpointTrigger : MonoBehaviour
 
     public GameObject NextTrigger;
     public GameObject CurrentTrigger;
+    public CheckpointsController Controller;
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
-        {
-            NextTrigger.SetActive(true);
-            CurrentTrigger.SetActive(false);
+        if (other.attachedRigidbody.tag == "PlayerOne") {
+            Controller.OnPlayerOneTriggeredCheckpoint(CurrentTrigger);
         }
+        else if (other.attachedRigidbody.tag == "PlayerTwo") {
+            Controller.OnPlayerTwoTriggeredCheckpoint(CurrentTrigger);
+        }
+        //{
+        //    NextTrigger.SetActive(true);
+        //    CurrentTrigger.SetActive(false);
+        //}
     }
 }
