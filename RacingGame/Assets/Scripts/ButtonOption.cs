@@ -52,4 +52,20 @@ public class ButtonOption : MonoBehaviour {
     {
         SceneManager.LoadScene(4);
     }
+
+    /// <summary>
+    /// Wybor trasy nr 4
+    /// </summary>
+    public void Track04()
+    {
+        SceneManager.LoadScene(5);
+    }
+
+    /// <summary>
+    /// Wybor trasy nr 5
+    /// </summary>
+    public void Track05()
+    {
+        SceneManager.LoadScene(6);
+    }
 }

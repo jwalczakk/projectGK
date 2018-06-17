@@ -2209,7 +2209,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &451148729
 Transform:
   m_ObjectHideFlags: 0
@@ -3512,7 +3512,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400050, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.88
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 400050, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3769,11 +3769,11 @@ Prefab:
     - target: {fileID: 2300004, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6ec41f7c0e0d3fb40933551a4124b211, type: 2}
+      objectReference: {fileID: 2100000, guid: ef8c4b2848de5644f93b89e39f363bc3, type: 2}
     - target: {fileID: 2300010, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6ec41f7c0e0d3fb40933551a4124b211, type: 2}
+      objectReference: {fileID: 2100000, guid: ef8c4b2848de5644f93b89e39f363bc3, type: 2}
     - target: {fileID: 11400022, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
       propertyPath: m_Enabled
       value: 1
@@ -3788,11 +3788,6 @@ GameObject:
 --- !u!4 &770280795 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400050, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
-  m_PrefabInternal: {fileID: 770280793}
---- !u!54 &770280796 stripped
-Rigidbody:
-  m_PrefabParentObject: {fileID: 5400000, guid: 0e7ee4df08df88c4880f43398f9ad2c2,
-    type: 2}
   m_PrefabInternal: {fileID: 770280793}
 --- !u!4 &770280797 stripped
 Transform:
@@ -17457,8 +17452,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2160bf56e62bc6941ac63c88c155ea02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  car: {fileID: 770280796}
-  speedDisplay: {fileID: 1122308611}
+  car1: {fileID: 0}
+  car2: {fileID: 0}
+  speedDisplay1: {fileID: 0}
+  speedDisplay2: {fileID: 0}
 --- !u!4 &1869201227
 Transform:
   m_ObjectHideFlags: 0
@@ -17757,7 +17754,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CountDown: {fileID: 2026609588}
   LapTimer: {fileID: 2037878408}
-  CarControls: {fileID: 756431135}
+  CarControls:
+  - {fileID: 0}
+  LapRequirementBoxes: []
+  LapCompleteTrigger: {fileID: 0}
   GetReady: {fileID: 2091259358}
   GoAudio: {fileID: 1635795811}
 --- !u!4 &1916800192
@@ -18175,9 +18175,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bedffc548425ea441981708721e1b400, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MinuteBox: {fileID: 1658318825}
-  SecondBox: {fileID: 814603645}
-  MilisecondBox: {fileID: 1028865325}
+  MinuteBox1: {fileID: 0}
+  SecondBox1: {fileID: 0}
+  MilisecondBox1: {fileID: 0}
+  MinuteBox2: {fileID: 0}
+  SecondBox2: {fileID: 0}
+  MilisecondBox2: {fileID: 0}
 --- !u!4 &2037878410
 Transform:
   m_ObjectHideFlags: 0
