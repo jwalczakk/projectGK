@@ -19,13 +19,27 @@ public class CarHeadlights : MonoBehaviour
     /// Stan wlaczenia reflektorow
     /// </summary>
     private bool headlightsEnabled = false;
+    /// <summary>
+    /// Czy uzywac alternatywnych przyciskow (dla gracza nr 2)
+    /// </summary>
+    public bool UseAlternativeButtons;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Headlights"))
+        if (!UseAlternativeButtons)
         {
-            headlightsEnabled = !headlightsEnabled;
+            if (Input.GetButtonDown("Headlights"))
+            {
+                headlightsEnabled = !headlightsEnabled;
+            }
+        }
+        else
+        {
+            if (Input.GetButtonDown("HeadlightsAlt"))
+            {
+                headlightsEnabled = !headlightsEnabled;
+            }
         }
 
         StartCoroutine(ChangeMode());

@@ -1,5 +1,7 @@
 var NAVTREEINDEX1 =
 {
+"class_unity_standard_assets_1_1_cross_platform_input_1_1_cross_platform_input_manager.html#adc185d28b9d06ee83035ef9b255682e1":[1,0,0,0,4,17],
+"class_unity_standard_assets_1_1_cross_platform_input_1_1_cross_platform_input_manager.html#ae9e694bb5f52ff1311d8c0b3ab644276":[1,0,0,0,4,23],
 "class_unity_standard_assets_1_1_cross_platform_input_1_1_cross_platform_input_manager.html#aef02595f4157113175d4c1be60402fbe":[1,0,0,0,4,9],
 "class_unity_standard_assets_1_1_cross_platform_input_1_1_cross_platform_input_manager_1_1_virtual_axis.html":[1,0,0,0,4,0],
 "class_unity_standard_assets_1_1_cross_platform_input_1_1_cross_platform_input_manager_1_1_virtual_axis.html#a051ce3991988d9ff11efe81e73491a68":[1,0,0,0,4,0,0],
@@ -157,6 +159,7 @@ var NAVTREEINDEX1 =
 "class_unity_standard_assets_1_1_vehicles_1_1_car_1_1_car_controller.html#afc20383fee54c532b7b062d73536e10b":[1,0,0,1,0,3,7],
 "class_unity_standard_assets_1_1_vehicles_1_1_car_1_1_car_self_righting.html":[1,0,0,1,0,4],
 "class_unity_standard_assets_1_1_vehicles_1_1_car_1_1_car_user_control.html":[1,0,0,1,0,5],
+"class_unity_standard_assets_1_1_vehicles_1_1_car_1_1_car_user_control.html#a7de037ca62f66ac35b61d36c20118a9a":[1,0,0,1,0,5,0],
 "class_unity_standard_assets_1_1_vehicles_1_1_car_1_1_mudguard.html":[1,0,0,1,0,6],
 "class_unity_standard_assets_1_1_vehicles_1_1_car_1_1_mudguard.html#ac47e6ae7fede7ec215c2fba343072906":[1,0,0,1,0,6,0],
 "class_unity_standard_assets_1_1_vehicles_1_1_car_1_1_skid_trail.html":[1,0,0,1,0,7],
@@ -188,8 +191,8 @@ var NAVTREEINDEX1 =
 "dir_e233bd96b06173e31a8d9af66666477c.html":[2,0,0,2,0,0,0],
 "dir_f13b41af88cf68434578284aaf699e39.html":[2,0,0,1],
 "files.html":[2,0],
-"functions.html":[1,3,0],
 "functions.html":[1,3,0,0],
+"functions.html":[1,3,0],
 "functions_b.html":[1,3,0,1],
 "functions_c.html":[1,3,0,2],
 "functions_d.html":[1,3,0,3],
@@ -220,8 +223,8 @@ var NAVTREEINDEX1 =
 "globals_type.html":[2,1,1],
 "hierarchy.html":[1,2],
 "index.html":[],
-"namespace_unity_standard_assets.html":[1,0,0],
 "namespace_unity_standard_assets.html":[0,0,0],
+"namespace_unity_standard_assets.html":[1,0,0],
 "namespace_unity_standard_assets_1_1_cross_platform_input.html":[0,0,0,0],
 "namespace_unity_standard_assets_1_1_cross_platform_input.html":[1,0,0,0],
 "namespace_unity_standard_assets_1_1_cross_platform_input_1_1_inspector.html":[1,0,0,0,0],
@@ -230,8 +233,8 @@ var NAVTREEINDEX1 =
 "namespace_unity_standard_assets_1_1_cross_platform_input_1_1_platform_specific.html":[1,0,0,0,1],
 "namespace_unity_standard_assets_1_1_vehicles.html":[0,0,0,1],
 "namespace_unity_standard_assets_1_1_vehicles.html":[1,0,0,1],
-"namespace_unity_standard_assets_1_1_vehicles_1_1_car.html":[1,0,0,1,0],
 "namespace_unity_standard_assets_1_1_vehicles_1_1_car.html":[0,0,0,1,0],
+"namespace_unity_standard_assets_1_1_vehicles_1_1_car.html":[1,0,0,1,0],
 "namespaces.html":[0,0],
 "pages.html":[]
 };

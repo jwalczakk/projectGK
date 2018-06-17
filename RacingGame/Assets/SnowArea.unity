@@ -899,6 +899,10 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &388390176 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100026, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
+  m_PrefabInternal: {fileID: 1213165621}
 --- !u!1 &451148728
 GameObject:
   m_ObjectHideFlags: 0
@@ -1909,6 +1913,10 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 690385268}
+--- !u!1 &738864053 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100024, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
+  m_PrefabInternal: {fileID: 1213165621}
 --- !u!1 &739250285
 GameObject:
   m_ObjectHideFlags: 0
@@ -2066,6 +2074,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &759403583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 759403585}
+  - component: {fileID: 759403584}
+  m_Layer: 0
+  m_Name: CameraManager (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &759403584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 759403583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5b7b861fd29b274a9938a665f5933db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCamera: {fileID: 1995392404}
+  farCamera: {fileID: 387354927}
+  firstPersonCamera: {fileID: 189738155}
+  defaultBackCamera: {fileID: 1541588994}
+  farBackCamera: {fileID: 103605895}
+  firstPersonBackCamera: {fileID: 1913506052}
+  cameraMode: 0
+  UseAlternativeButtons: 1
+--- !u!4 &759403585
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 759403583}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 948.9046, y: 149.84007, z: 754.42523}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &770280793
 Prefab:
@@ -2413,6 +2469,7 @@ MonoBehaviour:
   farBackCamera: {fileID: 999900124}
   firstPersonBackCamera: {fileID: 1759795626}
   cameraMode: 0
+  UseAlternativeButtons: 0
 --- !u!1 &811291984
 GameObject:
   m_ObjectHideFlags: 0
@@ -9175,6 +9232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftHeadlight: {fileID: 1352719025}
   rightHeadlight: {fileID: 1004391739}
+  UseAlternativeButtons: 0
 --- !u!4 &1760287239
 Transform:
   m_ObjectHideFlags: 0
@@ -9603,6 +9661,49 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1801252078}
+--- !u!1 &1845445219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1845445221}
+  - component: {fileID: 1845445220}
+  m_Layer: 0
+  m_Name: CarLightsManager (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1845445220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1845445219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7ba8c82bafc2fd4c8de3af93aa83dbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftHeadlight: {fileID: 388390176}
+  rightHeadlight: {fileID: 738864053}
+  UseAlternativeButtons: 1
+--- !u!4 &1845445221
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1845445219}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 88.46282, y: -58.899517, z: 377.2492}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1857629323
 GameObject:
   m_ObjectHideFlags: 0

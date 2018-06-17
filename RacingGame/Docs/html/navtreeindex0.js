@@ -73,6 +73,7 @@ var NAVTREEINDEX0 =
 "class_car_headlights.html":[1,0,4],
 "class_car_headlights.html#a984ce4887f69dad581827e85ee1f876d":[1,0,4,1],
 "class_car_headlights.html#ac9f62b10c78fbe5689533d8b36372fb4":[1,0,4,0],
+"class_car_headlights.html#aed361d3502538a255902271dc6c4974c":[1,0,4,2],
 "class_car_speed.html":[1,0,5],
 "class_car_speed.html#a336c1093ecc2d3ec4adf9729a926c268":[1,0,5,1],
 "class_car_speed.html#a6b5e3247b5fb88f20532c4a821f97a6c":[1,0,5,2],
@@ -85,6 +86,7 @@ var NAVTREEINDEX0 =
 "class_change_camera.html#a7fffdbcbea2cdc7d11898911514669f3":[1,0,6,1],
 "class_change_camera.html#a81daa55f57d2b2ac5d47afd7a3fe1504":[1,0,6,6],
 "class_change_camera.html#aa53d29e7f44c7729790b6acb82a92f12":[1,0,6,3],
+"class_change_camera.html#ae007e6a906203673306aeb6e33e6ca96":[1,0,6,7],
 "class_change_camera.html#af76cac3fbf2b40bbbb13ebba1e63b988":[1,0,6,4],
 "class_checkpoint_trigger.html":[1,0,8],
 "class_checkpoint_trigger.html#a007fb93e5e2c29ac9f4f017fc0d81bee":[1,0,8,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "class_unity_standard_assets_1_1_cross_platform_input_1_1_cross_platform_input_manager.html#ab494bb21f494748f2036d20a05d496df":[1,0,0,0,4,24],
 "class_unity_standard_assets_1_1_cross_platform_input_1_1_cross_platform_input_manager.html#abaceaf9f4dfd3ddecf0ab364c84c3d2d":[1,0,0,0,4,4],
 "class_unity_standard_assets_1_1_cross_platform_input_1_1_cross_platform_input_manager.html#abdeb5871a5d867418422070b3ff2483a":[1,0,0,0,4,7],
-"class_unity_standard_assets_1_1_cross_platform_input_1_1_cross_platform_input_manager.html#ad5fefc184e12a2384ac780a7b79c034c":[1,0,0,0,4,6],
-"class_unity_standard_assets_1_1_cross_platform_input_1_1_cross_platform_input_manager.html#adc185d28b9d06ee83035ef9b255682e1":[1,0,0,0,4,17],
-"class_unity_standard_assets_1_1_cross_platform_input_1_1_cross_platform_input_manager.html#ae9e694bb5f52ff1311d8c0b3ab644276":[1,0,0,0,4,23]
+"class_unity_standard_assets_1_1_cross_platform_input_1_1_cross_platform_input_manager.html#ad5fefc184e12a2384ac780a7b79c034c":[1,0,0,0,4,6]
 };

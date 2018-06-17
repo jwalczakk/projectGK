@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.3327011, g: 0.1701735, b: 0.0024504878, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -4326,6 +4326,7 @@ MonoBehaviour:
   farBackCamera: {fileID: 999900124}
   firstPersonBackCamera: {fileID: 1759795626}
   cameraMode: 0
+  UseAlternativeButtons: 0
 --- !u!1 &818896634
 GameObject:
   m_ObjectHideFlags: 0
@@ -7024,6 +7025,54 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1218513887}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1231065859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1231065861}
+  - component: {fileID: 1231065860}
+  m_Layer: 0
+  m_Name: CameraManager (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1231065860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1231065859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5b7b861fd29b274a9938a665f5933db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultCamera: {fileID: 1270612509}
+  farCamera: {fileID: 1398168149}
+  firstPersonCamera: {fileID: 1651020178}
+  defaultBackCamera: {fileID: 1397500661}
+  farBackCamera: {fileID: 225615890}
+  firstPersonBackCamera: {fileID: 2068404418}
+  cameraMode: 0
+  UseAlternativeButtons: 1
+--- !u!4 &1231065861
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1231065859}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 948.9046, y: 149.84007, z: 754.42523}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1241020092
 GameObject:
   m_ObjectHideFlags: 0
@@ -10037,6 +10086,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftHeadlight: {fileID: 1352719025}
   rightHeadlight: {fileID: 1004391739}
+  UseAlternativeButtons: 0
 --- !u!4 &1760287239
 Transform:
   m_ObjectHideFlags: 0
@@ -10220,6 +10270,49 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1794577013}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1796791207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1796791209}
+  - component: {fileID: 1796791208}
+  m_Layer: 0
+  m_Name: CarLightsManager (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1796791208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1796791207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7ba8c82bafc2fd4c8de3af93aa83dbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftHeadlight: {fileID: 1888512985}
+  rightHeadlight: {fileID: 1888512984}
+  UseAlternativeButtons: 1
+--- !u!4 &1796791209
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1796791207}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 88.46282, y: -58.899517, z: 377.2492}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1819233611
 GameObject:
   m_ObjectHideFlags: 0
@@ -10801,6 +10894,14 @@ Rigidbody:
 --- !u!4 &1888512983 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400050, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
+  m_PrefabInternal: {fileID: 1888512980}
+--- !u!1 &1888512984 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100024, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
+  m_PrefabInternal: {fileID: 1888512980}
+--- !u!1 &1888512985 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100026, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
   m_PrefabInternal: {fileID: 1888512980}
 --- !u!1 &1898719827
 GameObject:

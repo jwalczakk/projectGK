@@ -54,21 +54,43 @@ public class ChangeCamera : MonoBehaviour
     /// Stan wyboru wstecznej kamery
     /// </summary>
     private bool isBackCameraEnabled = false;
+    /// <summary>
+    /// Czy uzywac alternatywnych przyciskow (dla gracza nr 2)
+    /// </summary>
+    public bool UseAlternativeButtons;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Camera"))
+        if (!UseAlternativeButtons)
         {
-            cameraMode = (CameraMode)(((int)++cameraMode) % 3);
+            if (Input.GetButtonDown("Camera"))
+            {
+                cameraMode = (CameraMode)(((int)++cameraMode) % 3);
+            }
+            if (Input.GetButtonDown("LookBack"))
+            {
+                isBackCameraEnabled = true;
+            }
+            if (Input.GetButtonUp("LookBack"))
+            {
+                isBackCameraEnabled = false;
+            }
         }
-        if (Input.GetButtonDown("LookBack"))
+        else
         {
-            isBackCameraEnabled = true;
-        }
-        if (Input.GetButtonUp("LookBack"))
-        {
-            isBackCameraEnabled = false;
+            if (Input.GetButtonDown("CameraAlt"))
+            {
+                cameraMode = (CameraMode)(((int)++cameraMode) % 3);
+            }
+            if (Input.GetButtonDown("LookBackAlt"))
+            {
+                isBackCameraEnabled = true;
+            }
+            if (Input.GetButtonUp("LookBackAlt"))
+            {
+                isBackCameraEnabled = false;
+            }
         }
 
         StartCoroutine(ChangeMode());

@@ -6,5 +6,6 @@ var class_change_camera =
     [ "farBackCamera", "class_change_camera.html#aa53d29e7f44c7729790b6acb82a92f12", null ],
     [ "farCamera", "class_change_camera.html#af76cac3fbf2b40bbbb13ebba1e63b988", null ],
     [ "firstPersonBackCamera", "class_change_camera.html#a0fccc455a97e5bcb903ce8bfe3a54d33", null ],
-    [ "firstPersonCamera", "class_change_camera.html#a81daa55f57d2b2ac5d47afd7a3fe1504", null ]
+    [ "firstPersonCamera", "class_change_camera.html#a81daa55f57d2b2ac5d47afd7a3fe1504", null ],
+    [ "UseAlternativeButtons", "class_change_camera.html#ae007e6a906203673306aeb6e33e6ca96", null ]
 ];

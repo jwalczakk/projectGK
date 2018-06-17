@@ -10,7 +10,7 @@ var dir_1c76b51a38052b36b217dfcadd1f65f2 =
       [ "CarSelfRighting", "class_unity_standard_assets_1_1_vehicles_1_1_car_1_1_car_self_righting.html", null ]
     ] ],
     [ "CarUserControl.cs", "_car_user_control_8cs.html", [
-      [ "CarUserControl", "class_unity_standard_assets_1_1_vehicles_1_1_car_1_1_car_user_control.html", null ]
+      [ "CarUserControl", "class_unity_standard_assets_1_1_vehicles_1_1_car_1_1_car_user_control.html", "class_unity_standard_assets_1_1_vehicles_1_1_car_1_1_car_user_control" ]
     ] ],
     [ "FinishRotate.cs", "_finish_rotate_8cs.html", [
       [ "FinishRotate", "class_finish_rotate.html", null ]

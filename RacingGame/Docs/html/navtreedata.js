@@ -53,7 +53,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_axis_touch_button_8cs.html",
-"class_unity_standard_assets_1_1_cross_platform_input_1_1_cross_platform_input_manager.html#aef02595f4157113175d4c1be60402fbe"
+"class_unity_standard_assets_1_1_cross_platform_input_1_1_cross_platform_input_manager.html#adc185d28b9d06ee83035ef9b255682e1"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
