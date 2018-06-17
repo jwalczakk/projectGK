@@ -25,9 +25,14 @@ public class SprintRaceFinish : MonoBehaviour
     /// Dzwiek ukonczenia wyscigu
     /// </summary>
     public AudioSource FinishMusicSource;
+    /// <summary>
+    /// Przycisk powrotu do menu glownego
+    /// </summary>
+    public GameObject MainMenuButton;
 
     void OnTriggerEnter()
     {
+        MainMenuButton.SetActive(true);
         this.GetComponent<BoxCollider>().enabled = false;
         MyCar.SetActive(false);
         CarController.m_Topspeed = 0.0f;
