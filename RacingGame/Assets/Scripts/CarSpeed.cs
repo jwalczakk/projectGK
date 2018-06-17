@@ -42,7 +42,10 @@ public class CarSpeed : MonoBehaviour {
         speed1 = (int)(car1.velocity.magnitude * 2.7);
         speedDisplay1.text = speed1.ToString();
 
-        speed2 = (int)(car2.velocity.magnitude * 2.7);
-        speedDisplay2.text = speed2.ToString();
+        if (car2 != null)
+        {
+            speed2 = (int)(car2.velocity.magnitude * 2.7);
+            speedDisplay2.text = speed2.ToString();
+        }
     }
 }

@@ -42,8 +42,9 @@ public class Countdown : MonoBehaviour
     void Start()
     {
         StartCoroutine(CountStart());
-        foreach (GameObject box in LapRequirementBoxes)
-            box.GetComponent<Text>().text = string.Format("/ {0}", LapCompleteTrigger.GetComponent<LapComplete>().LapsRequirement);
+        if (LapRequirementBoxes != null)
+            foreach (GameObject box in LapRequirementBoxes)
+                box.GetComponent<Text>().text = string.Format("/ {0}", LapCompleteTrigger.GetComponent<LapComplete>().LapsRequirement);
     }
 
     /// <summary>

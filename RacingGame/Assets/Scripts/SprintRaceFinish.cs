@@ -40,6 +40,7 @@ public class SprintRaceFinish : MonoBehaviour
         MyCar.GetComponent<CarController>().enabled = false;
         MyCar.GetComponent<CarUserControl>().enabled = false;
         MyCar.GetComponent<AudioSource>().enabled = false;
+        MyCar.GetComponent<CarAudio>().enabled = false;
         FinishCam.SetActive(true);
         MyCar.SetActive(true);
         ViewModes.SetActive(false);
