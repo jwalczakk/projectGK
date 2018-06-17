@@ -3895,6 +3895,10 @@ Prefab:
       propertyPath: m_TagString
       value: PlayerTwo
       objectReference: {fileID: 0}
+    - target: {fileID: 11400022, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
+      propertyPath: UseAlternativeButtons
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
   m_IsPrefabParent: 0
@@ -8270,7 +8274,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LapCompleteTrig: {fileID: 1485805821}
-  NextTrigger: {fileID: 553457777}
   BestMinuteDisplay1: {fileID: 896744299}
   BestSecondDisplay1: {fileID: 456209951}
   BestMillisecondDisplay1: {fileID: 132657780}

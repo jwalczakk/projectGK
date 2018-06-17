@@ -5872,7 +5872,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LapCompleteTrig: {fileID: 1485805821}
-  NextTrigger: {fileID: 553457777}
   BestMinuteDisplay1: {fileID: 959276201}
   BestSecondDisplay1: {fileID: 594924766}
   BestMillisecondDisplay1: {fileID: 436055564}
@@ -6266,6 +6265,10 @@ Prefab:
     - target: {fileID: 100042, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
       propertyPath: m_TagString
       value: PlayerTwo
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400022, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
+      propertyPath: UseAlternativeButtons
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}

@@ -9,6 +9,8 @@ namespace UnityStandardAssets.Vehicles.Car
     {
         private CarController m_Car; // the car controller we want to use
 
+        public bool UseAlternativeButtons;
+
 
         private void Awake()
         {
@@ -20,8 +22,17 @@ namespace UnityStandardAssets.Vehicles.Car
         private void FixedUpdate()
         {
             // pass the input to the car!
-            float h = CrossPlatformInputManager.GetAxis("Horizontal");
-            float v = CrossPlatformInputManager.GetAxis("Vertical");
+            float h, v;
+            if (!UseAlternativeButtons)
+            {
+                h = CrossPlatformInputManager.GetAxis("Horizontal");
+                v = CrossPlatformInputManager.GetAxis("Vertical");
+            }
+            else
+            {
+                h = CrossPlatformInputManager.GetAxis("HorizontalAlt");
+                v = CrossPlatformInputManager.GetAxis("VerticalAlt");
+            }
 #if !MOBILE_INPUT
             float handbrake = CrossPlatformInputManager.GetAxis("Jump");
             if (m_Car.enabled)
