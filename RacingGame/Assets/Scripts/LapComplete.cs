@@ -183,7 +183,7 @@ public class LapComplete : MonoBehaviour
 
         if (LapsDone2 == LapsRequirement)
         {
-            Controller.PlayerOneFinished = true;
+            Controller.PlayerTwoFinished = true;
         }
 
         if (LapTimeManager.MinuteCount2 < BestMinuteCount2
