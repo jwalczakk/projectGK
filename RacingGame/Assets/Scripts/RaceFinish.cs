@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Vehicles.Car;
+using UnityEngine.UI;
 
 /// <summary>
 /// Klasa odpowiadajaca za wyzwolenie wydarzenia konca wyscigu na zamknietym torze
@@ -38,6 +39,14 @@ public class RaceFinish : MonoBehaviour
     /// Kontroler punktow kontrolnych
     /// </summary>
     public CheckpointsController Controller;
+    /// <summary>
+    /// Wiadomosc koncowa, wynik wyscigu
+    /// </summary>
+    public GameObject FinishMessage;
+    /// <summary>
+    /// Przycisk powrotu do menu glownego
+    /// </summary>
+    public GameObject MainMenuButton;
 
     void OnTriggerEnter(Collider other)
     {
@@ -50,9 +59,22 @@ public class RaceFinish : MonoBehaviour
             }
         }
 
-        if (car != null && ((car.tag == "PlayerOne" && Controller.PlayerOneFinished)
-            || (car.tag == "PlayerTwo" && Controller.PlayerTwoFinished)))
+        bool PlayerOne = (car.tag == "PlayerOne" && Controller.PlayerOneFinished);
+        bool PlayerTwo = (car.tag == "PlayerTwo" && Controller.PlayerTwoFinished);
+
+        if (car != null && (PlayerOne)
+            || (PlayerTwo))
         {
+            FinishMessage.SetActive(true);
+            MainMenuButton.SetActive(true);
+            if (PlayerOne)
+            {
+                FinishMessage.GetComponent<Text>().text = "PLAYER ONE WON";
+            }
+            if (PlayerTwo)
+            {
+                FinishMessage.GetComponent<Text>().text = "PLAYER TWO WON";
+            }
 
             this.GetComponent<BoxCollider>().enabled = false;
 
