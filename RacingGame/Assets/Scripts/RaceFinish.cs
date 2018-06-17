@@ -16,7 +16,7 @@ public class RaceFinish : MonoBehaviour
     /// <summary>
     /// Kamera koncowa
     /// </summary>
-    public GameObject FinishCam;
+    public GameObject[] FinishCams;
 
     public GameObject ViewModes;
     /// <summary>
@@ -67,12 +67,14 @@ public class RaceFinish : MonoBehaviour
         {
             FinishMessage.SetActive(true);
             MainMenuButton.SetActive(true);
+            GameObject FinishCam = FinishCams[0];
             if (PlayerOne)
             {
                 FinishMessage.GetComponent<Text>().text = "PLAYER ONE WON";
             }
             if (PlayerTwo)
             {
+                FinishCam = FinishCams[1];
                 FinishMessage.GetComponent<Text>().text = "PLAYER TWO WON";
             }
 
