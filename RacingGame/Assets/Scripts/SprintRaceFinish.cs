@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Vehicles.Car;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Klasa odpowiadajaca za wyzwolenie wydarzenia konca wyscigu od punktu do punktu
@@ -29,6 +30,16 @@ public class SprintRaceFinish : MonoBehaviour
     /// Przycisk powrotu do menu glownego
     /// </summary>
     public GameObject MainMenuButton;
+
+    void Update()
+    {
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
+
 
     void OnTriggerEnter()
     {

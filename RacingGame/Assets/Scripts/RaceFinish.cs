@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Vehicles.Car;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Klasa odpowiadajaca za wyzwolenie wydarzenia konca wyscigu na zamknietym torze
@@ -48,6 +49,16 @@ public class RaceFinish : MonoBehaviour
     /// </summary>
     public GameObject MainMenuButton;
 
+
+    void Update()
+    {
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
+
     void OnTriggerEnter(Collider other)
     {
         GameObject car = null;
@@ -66,7 +77,7 @@ public class RaceFinish : MonoBehaviour
             || (PlayerTwo))
         {
             FinishMessage.SetActive(true);
-            MainMenuButton.SetActive(true);
+            // MainMenuButton.SetActive(true);
             GameObject FinishCam = FinishCams[0];
             if (PlayerOne)
             {
